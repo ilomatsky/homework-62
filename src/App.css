@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "palatinolinotype";
+  src: url("assets/fonts/palatinolinotype_bold.ttf") format("truetype");
+}
+
+body {
+  font-family: "palatinolinotype", sans-serif;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -22,11 +31,10 @@ nav a:hover,
 nav a:focus,
 nav a.active {
   font-weight: bold;
-  color: #333;
+  color: #000;
 }
 
 .home-page {
-  color: #333;
   font-size: 174px;
   font-weight: 400;
 }
@@ -35,7 +43,7 @@ nav a.active {
   position: relative;
   background: url("./public/about.svg") no-repeat fixed center 80px;
   border-radius: 15px;
-  padding: 290px 0;
+  padding: 270px 0;
 }
 
 .about-page::before {
