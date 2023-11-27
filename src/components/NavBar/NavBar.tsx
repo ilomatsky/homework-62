@@ -1,17 +1,22 @@
+import React from 'react';
 import {NavLink} from 'react-router-dom';
+import logo from '../../public/logo.svg';
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
   return (
     <nav>
-      <NavLink to="/" end activeClassName="active">
-        Home
-      </NavLink>
-      <NavLink to="/about" activeClassName="active">
-        About Us
-      </NavLink>
-      <NavLink to="/contacts" activeClassName="active">
-        Contacts
-      </NavLink>
+      <img src={logo} alt="logo"/>
+      <div>
+        <NavLink to="/">
+          Home
+        </NavLink>
+        <NavLink to="/about">
+          About Us
+        </NavLink>
+        <NavLink to="/contacts">
+          Contacts
+        </NavLink>
+      </div>
     </nav>
   );
 };

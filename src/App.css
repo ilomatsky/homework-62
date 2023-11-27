@@ -1,24 +1,29 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px;
-  background-color: #eee;
 }
 
 nav a {
   text-decoration: none;
-  color: #333;
+  margin: 0 20px;
+  color: #808080;
 }
 
 nav a.active {
   font-weight: bold;
-  color: #007bff;
+  color: #333;
 }
 
+.title {
+  color: #333;
+  font-size: 174px;
+  font-weight: 400;
+}
