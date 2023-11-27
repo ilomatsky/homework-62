@@ -9,6 +9,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  margin-bottom: 25px;
 }
 
 nav a {
@@ -26,4 +27,30 @@ nav a.active {
   color: #333;
   font-size: 174px;
   font-weight: 400;
+}
+
+.about-title {
+  position: relative;
+  background: url("./public/about.svg") no-repeat fixed center 80px;
+  border-radius: 15px;
+  padding: 290px 0;
+}
+
+.about-title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 15px 0 0 15px;
+}
+
+.about-text {
+  position: relative;
+  margin-left: 182px;
+  z-index: 3;
+  color: #fff;
+  font-size: 25px;
 }
